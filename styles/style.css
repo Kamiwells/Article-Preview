@@ -1,0 +1,67 @@
+/* fonts */
+@font-face {
+  font-display: swap;
+  font-family: Manrope;
+  font-weight: 500;
+  font-style: normal;
+  src: url(/fonts/manrope-v20-latin-500.woff2);
+}
+@font-face {
+  font-display: swap;
+  font-family: Manrope-bold;
+  font-weight: 700;
+  font-style: normal;
+  src: url(/fonts/manrope-v20-latin-700.woff2);
+}
+
+/* resets */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* custom properties */
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 39%, 84%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+.socials {
+  padding: 2rem 3rem;
+  background: var(--Very-Dark-Grayish-Blue);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transition: 0.5s ease-out;
+}
+.socials-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding-inline: -2.5rem;
+}
+.socials-wrapper > h1 {
+  letter-spacing: 0.5rem;
+  color: var(--Desaturated-Dark-Blue);
+  font-weight: bold;
+  padding-inline-end: 0.6rem;
+}
+.share-btn {
+  width: 3rem;
+  height: 3rem;
+  background: var(--Desaturated-Dark-Blue);
+  border-radius: 10rem;
+  display: grid;
+  place-content: center;
+}
+.socials-toolipp::after {
+  content: "";
+  position: absolute;
+  top: 82%;
+  left: 52%;
+  transform: rotate(45deg);
+  border-block-start: 2rem solid var(--Very-Dark-Grayish-Blue);
+  border-inline-start: 2rem solid var(--Very-Dark-Grayish-Blue);
+}

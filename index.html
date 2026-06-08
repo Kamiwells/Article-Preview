@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media-queries.css" />
+    <script src="tailwind.js"></script>
+  </head>
+  <body
+    class="flex flex-col justify-center items-center min-h-svh bg-[--Grayish-Blue] text-[1.3rem] text-[--Very-Dark-Grayish-Blue] font-[Manrope]"
+  >
+    <section
+      class="article-preview bg-[--Light-Grayish-Blue] max-w-[68rem] mx-[2.5rem] rounded-2xl md:flex overflow-hidden md:overflow-visible"
+    >
+      <div
+        class="overflow-hidden md:flex-shrink-0 rounded-tl-2xl rounded-tr-2xl md:rounded-bl-2xl md:rounded-tr-none md:w-[28rem]"
+      >
+        <img
+          src="images/drawers.jpg"
+          alt="green drawers with brown vase"
+          class="h-[20rem] w-full object-cover object-center md:object-left md:h-full md:w-full"
+        />
+      </div>
+      <section class="px-[3rem]">
+        <h1 class="font-bold mt-[3rem] text-[1.6rem] md:text-[1.9rem]">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="mt-[1.8rem] mb-[3rem] md:mb-[2rem] md:text-[1.25rem]">
+          Ever been in a room and felt like something was missing? Peharps it
+          felt slightly bare and uninviting I've got some simple tips to help
+          you make any room feel complete
+        </p>
+        <section class="socialss flex justify-between mb-[2rem] items-center">
+          <div class="flex gap-[1.5rem] content-center">
+            <img
+              src="/images/avatar-michelle.jpg"
+              alt="michelle avatar picture"
+              class="w-[4.2rem] h-[4.2rem] rounded-full"
+            />
+            <div class="profile-name">
+              <h2 class="font-bold mb-1">Michelle Appleton</h2>
+              <p class="text-[--Desaturated-Dark-Blue]">28 jul 2020</p>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+                class="socials-toolip socials-toolipp hidden absolute md:w-[25rem] md:bg-[--Very-Dark-Grayish-Blue] md:py-[2rem] md:rounded-2xl bottom-[5rem] -translate-x-1/2">
+                <div
+                  class="toolip-wrapper w-full md:justify-center md:flex md:gap-[1.5rem]"
+                >
+                  <h1
+                    class="tracking-[.3rem] font-bold text-[--Desaturated-Dark-Blue] pr-[1rem]"
+                  >
+                    SHARE
+                  </h1>
+                  <img src="images/icon-facebook.svg" alt="facebook" />
+                  <img src="images/icon-twitter.svg" alt="twitter" />
+                  <img src="images/icon-pinterest.svg" alt="pinterest" />
+                </div>
+              </div>
+            <div
+              class="js-share w-[3rem] h-[3rem] bg-[--Grayish-Blue] rounded-full grid place-content-center relative"
+              onclick="shareSocials()">
+              <img src="/images/icon-share.svg" alt="share button" />
+            </div>
+
+              
+          </div>
+        </section>
+      </section>
+      <div class="socials hidden md:hidden">
+        <div class="socials-wrapper">
+          <h1>SHARE</h1>
+          <img src="images/icon-facebook.svg" alt="facebook" />
+          <img src="images/icon-twitter.svg" alt="twitter" />
+          <img src="images/icon-pinterest.svg" alt="pinterest" />
+        </div>
+        <div onclick="shareSocials()" class="share-btn">
+          <img src="/images/icon-share.svg" alt="share button" />
+        </div>
+      </div>
+    </section>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
